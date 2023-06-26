@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Homepage3" prefHeight="692.0" prefWidth="1093.0" style="-fx-background-color: #3A3A3AFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.HomePage3">
+    <children>
+        <AnchorPane layoutX="12.0" layoutY="12.0" prefHeight="683.0" prefWidth="1084.0" style="-fx-background-color: #FFC900FF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+            <children>
+                <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="675.0" prefWidth="1076.0" style="-fx-background-color: #3A3A3AFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+                    <children>
+                        <ImageView fitHeight="676.0" fitWidth="458.0" layoutX="630.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/6 1.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="676.0" fitWidth="412.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/7 1.png" />
+                            </image>
+                        </ImageView>
+                        <AnchorPane layoutX="270.0" layoutY="40.0" opacity="0.21" prefHeight="447.0" prefWidth="499.0" style="-fx-background-color: black;" />
+                        <Label layoutX="366.0" layoutY="334.0" text="Contact info" textFill="#ffc900">
+                            <font>
+                                <Font name="Times New Roman Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="366.0" layoutY="371.0" prefHeight="16.0" prefWidth="280.0" text="Call :             +94713988628 , +94718407606" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Bold" size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="366.0" layoutY="392.0" text="Write :          lakshanrashmika16302@gmail.com" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="366.0" layoutY="412.0" prefHeight="20.0" prefWidth="264.0" text="Find us :       Matara" textFill="#fffbfb">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="448.0" layoutY="75.0" text="Call For Reservations" textFill="#ffc900">
+                            <font>
+                                <Font name="Times New Roman Bold Italic" size="17.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="426.0" layoutY="95.0" text="Opening Hours" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman Bold" size="30.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="328.0" layoutY="153.0" text="Sunday to Tuesday" textFill="#ffc900">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="593.0" layoutY="153.0" text="Friday to Saturday" textFill="#ffc900">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Line endX="65.0" layoutX="388.0" layoutY="299.0" startX="-68.0" stroke="#ffc900" />
+                        <Line endX="65.0" layoutX="651.0" layoutY="297.0" startX="-68.0" stroke="#ffc900" />
+                        <Label layoutX="344.0" layoutY="184.0" text="09:00" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="30.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="344.0" layoutY="229.0" text="22:00" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="30.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="607.0" layoutY="184.0" text="11:00" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="30.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="607.0" layoutY="229.0" text="19:00" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="30.0" />
+                            </font>
+                        </Label>
+                        <Line endX="247.0" layoutX="447.0" layoutY="330.0" startX="-86.0" stroke="#ffc900" />
+                        <Line endX="247.0" layoutX="447.0" layoutY="439.0" startX="-87.0" stroke="#ffc900" />
+                        <Line endX="-24.0" endY="169.5" layoutX="385.0" layoutY="270.0" startX="-24.0" startY="61.0" stroke="#ffc900" />
+                        <Line endX="-24.0" endY="169.5" layoutX="718.0" layoutY="269.0" startX="-24.0" startY="61.0" stroke="#ffc900" />
+                        <Line endX="399.0" layoutX="371.0" layoutY="40.0" startX="-101.0" startY="0.1666717529296875" stroke="#ffc900" strokeDashOffset="12.0" />
+                        <Line endX="398.0" layoutX="371.0" layoutY="487.0" startX="-100.0" stroke="#ffc900" strokeDashOffset="12.0" />
+                        <Line endX="-100.0" endY="445.0" layoutX="870.0" layoutY="42.0" startX="-100.0" startY="-1.3333320617675781" stroke="#ffc900" />
+                        <Line endX="-100.0" endY="445.0" layoutX="370.0" layoutY="42.0" startX="-100.0" startY="-1.3333320617675781" stroke="#ffc900" />
+                  <Button fx:id="btnhome2" layoutX="527.0" layoutY="617.0" mnemonicParsing="false" onAction="#btnhome2OnAction" prefHeight="17.0" prefWidth="25.0" style="-fx-background-radius: 50 50 50 50; -fx-background-color: #FFC900FF;" />
+                  <Button fx:id="btnhome3" layoutX="563.0" layoutY="617.0" mnemonicParsing="false" onAction="#btnhome3OnAction" prefHeight="17.0" prefWidth="25.0" style="-fx-background-radius: 50 50 50 50; -fx-background-color: #ffffff;" textFill="WHITE" />
+                  <Button fx:id="btnhome1" layoutX="491.0" layoutY="617.0" mnemonicParsing="false" onAction="#btnhome1OnAction" prefHeight="17.0" prefWidth="25.0" style="-fx-background-radius: 50 50 50 50; -fx-background-color: #FFC900FF;" textFill="WHITE" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="687.0" prefWidth="1087.0" style="-fx-background-color: #3A3A3AFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.PaymentFormController">
+    <AnchorPane layoutX="4.0" layoutY="5.0" prefHeight="678.0" prefWidth="1078.0" style="-fx-background-color: #ffc900;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+        <children>
+            <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="670.0" prefWidth="1070.0" style="-fx-background-color: #3A3A3AFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+                <children>
+               <ImageView fitHeight="757.0" fitWidth="444.0" layoutX="626.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../image/6 1.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="670.0" fitWidth="457.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../image/7 1.png" />
+                  </image>
+               </ImageView>
+                    <TableView fx:id="tblPayment" layoutX="96.0" layoutY="279.0" onMouseClicked="#tableOnMouseClicked" prefHeight="291.0" prefWidth="863.0">
+                        <columns>
+                            <TableColumn fx:id="colOrderId" prefWidth="136.0" text="Order ID" />
+                            <TableColumn fx:id="colCustomerId" prefWidth="154.0" text="Customer ID" />
+                            <TableColumn fx:id="colPayment" prefWidth="165.0" text="Payment" />
+                            <TableColumn fx:id="colOrderTime" prefWidth="136.0" text="Order Time" />
+                     <TableColumn fx:id="colOrderDate" prefWidth="136.0" text="Order Date" />
+                     <TableColumn fx:id="colDeliveryStatus" prefWidth="136.0" text="Delivery Status " />
+                        </columns>
+                    </TableView>
+                    <Button id="line" fx:id="btnBill" layoutX="864.0" layoutY="606.0" mnemonicParsing="false" onAction="#btnBillOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" stylesheets="@../style/editSheet.css" text="Bill">
+                        <font>
+                            <Font name="System Bold Italic" size="12.0" />
+                        </font>
+                    </Button>
+                    <Label layoutX="396.0" layoutY="16.0" prefHeight="33.0" prefWidth="244.0" text="Payment Management" textFill="#ffc900">
+                        <font>
+                            <Font name="Comic Sans MS" size="23.0" />
+                        </font>
+                    </Label>
+               <TextField fx:id="txtSearch" layoutX="724.0" layoutY="44.0" onAction="#empIdSearchBarOnAction" onKeyTyped="#txtSearchOnKeyTypedAction" prefHeight="28.0" prefWidth="204.0" promptText="Search by ID" />
+               <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="901.0" layoutY="46.0" onMouseClicked="#searchIconOnMouseClickedAction" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@../image/searchIcon.png" />
+                  </image>
+               </ImageView>
+               <Label layoutX="434.0" layoutY="120.0" text="Customer ID :" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblCustomerId" layoutX="542.0" layoutY="120.0" prefHeight="21.0" prefWidth="72.0" textFill="#ffc900">
+                  <font>
+                     <Font name="System Bold Italic" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="686.0" layoutY="120.0" text="Payment :" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblPayment" layoutX="767.0" layoutY="121.0" prefHeight="21.0" prefWidth="72.0" textFill="#ffc900">
+                  <font>
+                     <Font name="System Bold Italic" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="171.0" layoutY="197.0" text="Order Time :" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblOrderTime" layoutX="269.0" layoutY="198.0" prefHeight="21.0" prefWidth="88.0" textFill="#ffc900">
+                  <font>
+                     <Font name="System Bold Italic" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="434.0" layoutY="198.0" text="Order Date:" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblOrderDate" layoutX="532.0" layoutY="199.0" prefHeight="21.0" prefWidth="88.0" textFill="#ffc900">
+                  <font>
+                     <Font name="System Bold Italic" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="686.0" layoutY="200.0" text="Delivery Status :" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblDeliveryStatus" layoutX="807.0" layoutY="201.0" prefHeight="21.0" prefWidth="88.0" textFill="#ffc900">
+                  <font>
+                     <Font name="System Bold Italic" size="15.0" />
+                  </font>
+               </Label>
+               <Label layoutX="169.0" layoutY="123.0" text="Order ID:" textFill="WHITE">
+                  <font>
+                     <Font name="System Bold" size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="lblOrderId" layoutX="250.0" layoutY="123.0" prefHeight="21.0" prefWidth="88.0" textFill="#ffc900">
+                  <font>
+                     <Font name="System Bold Italic" size="15.0" />
+                  </font>
+               </Label>
+               <JFXButton id="line" fx:id="btnDelete" layoutX="792.0" layoutY="607.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="loginBtn" stylesheets="@../style/editSheet.css" text="Delete" textFill="#fff8f8">
+                  <font>
+                     <Font name="System Bold Italic" size="12.0" />
+                  </font>
+               </JFXButton>
+                </children>
+            </AnchorPane>
+        </children>
+    </AnchorPane>
+</AnchorPane>

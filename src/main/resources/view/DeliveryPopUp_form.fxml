@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ancpPopUpDelivery" prefHeight="499.0" prefWidth="661.0" style="-fx-background-color: #3A3A3AFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.DeliveryPopUpFormController">
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="4.0" prefHeight="492.0" prefWidth="655.0" style="-fx-background-color: #ffc900;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+         <children>
+            <AnchorPane layoutX="5.0" layoutY="4.0" prefHeight="485.0" prefWidth="646.0" style="-fx-background-color: #3A3A3AFF;" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="3.0">
+               <children>
+                  <Text fill="#ffc900" layoutX="232.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery details" wrappingWidth="185.6667284965515">
+                     <font>
+                        <Font name="Gabriola" size="37.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="487.0" fitWidth="288.0" layoutX="3.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/7 1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="607.0" fitWidth="321.0" layoutX="327.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/6 1.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtDeliveryId" focusTraversable="false" layoutX="285.0" layoutY="196.0" prefHeight="15.0" prefWidth="219.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtLocation" layoutX="285.0" layoutY="250.0" prefHeight="9.0" prefWidth="219.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="142.0" layoutY="336.0" prefHeight="46.0" prefWidth="139.0" text="Employee Id :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbEmployeeId" layoutX="285.0" layoutY="344.0" onAction="#cmbCustIdOnAction" prefHeight="31.0" prefWidth="219.0" />
+      <DatePicker fx:id="dtpickerDueDate" layoutX="285.0" layoutY="298.0" prefHeight="31.0" prefWidth="219.0" />
+      <Label layoutX="142.0" layoutY="290.0" prefHeight="46.0" prefWidth="139.0" text="Due Date      :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="244.0" prefHeight="46.0" prefWidth="139.0" text="Location       :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="142.0" layoutY="190.0" prefHeight="46.0" prefWidth="139.0" text="Delivery ID   :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="131.0" prefHeight="46.0" prefWidth="109.0" text="OrderId         :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblOrderId" layoutX="166.0" layoutY="131.0" prefHeight="46.0" prefWidth="127.0" text="orderId" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton id="line" fx:id="btnSave" buttonType="RAISED" layoutX="504.0" layoutY="421.0" onAction="#saveOnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: #ffc900;" styleClass="btnSave" stylesheets="@../style/editSheet.css" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="349.0" layoutY="131.0" prefHeight="46.0" prefWidth="109.0" text="Date              :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="458.0" layoutY="131.0" prefHeight="46.0" prefWidth="127.0" text="lbldate" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

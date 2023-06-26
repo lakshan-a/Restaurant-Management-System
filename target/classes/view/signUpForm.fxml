@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="560.0" prefWidth="1020.0" style="-fx-background-color: #3A3A3AFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.SignUpController">
+   <children>
+      <AnchorPane layoutX="31.0" layoutY="13.0" prefHeight="552.0" prefWidth="1013.0" style="-fx-background-color: #ffc900;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <AnchorPane layoutX="29.0" layoutY="24.0" prefHeight="554.0" prefWidth="1004.0" style="-fx-background-color: #3A3A3AFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+               <children>
+                  <ImageView fitHeight="582.0" fitWidth="816.0" layoutX="187.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/7.png" />
+                     </image>
+                  </ImageView>
+                  <TextField id="red" fx:id="emailTxt" layoutX="608.0" layoutY="102.0" prefHeight="39.0" prefWidth="320.0" promptText="Email" style="-fx-background-radius: 20; -fx-background-color: #3A3A3AFF;" stylesheets="@../style/stylesheet.css">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="red" fx:id="userNameTxt" layoutX="606.0" layoutY="187.0" prefHeight="39.0" prefWidth="320.0" promptText="User Name" style="-fx-background-radius: 20; -fx-background-color: #3A3A3AFF;" stylesheets="@../style/stylesheet.css">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="red" fx:id="passwordTxt" layoutX="604.0" layoutY="259.0" prefHeight="39.0" prefWidth="320.0" promptText="Password" style="-fx-background-radius: 20; -fx-background-color: #3A3A3AFF;" stylesheets="@../style/stylesheet.css">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField id="red" fx:id="confrimPasswordTxt" layoutX="606.0" layoutY="339.0" prefHeight="39.0" prefWidth="320.0" promptText="Confirm Password" style="-fx-background-radius: 20; -fx-background-color: #3A3A3AFF;" stylesheets="@../style/stylesheet.css">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton id="blue" fx:id="signUpBtn" layoutX="705.0" layoutY="413.0" onAction="#signUpBtnOnAction" style="-fx-background-color: #ffc900; -fx-background-radius: 35;" stylesheets="@../style/stylesheet.css" text="Sign Up" />
+                  <Hyperlink fx:id="alreadyHaveAnAccount" layoutX="708.0" layoutY="485.0" onAction="#alreadyHaveAnAccountClick" text="Already have an account" />
+                  <ImageView fitHeight="552.0" fitWidth="506.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/photo-1532980400857-e8d9d275d858.jpg" />
+                     </image>
+                  </ImageView>
+                  <Line endX="170.638671875" endY="-3.0517578125E-5" layoutX="754.0" layoutY="386.0" startX="-186.361328125" startY="-3.0517578125E-5" stroke="#ffc900" strokeWidth="5.0" />
+                  <Line endX="170.638671875" endY="-3.0517578125E-5" layoutX="754.0" layoutY="231.0" startX="-186.361328125" startY="-3.0517578125E-5" stroke="#ffc900" strokeWidth="5.0" />
+                  <Line endX="170.638671875" endY="-3.0517578125E-5" layoutX="754.0" layoutY="146.0" startX="-186.361328125" startY="-3.0517578125E-5" stroke="#ffc900" strokeWidth="5.0" />
+                  <Line endX="170.638671875" endY="-3.0517578125E-5" layoutX="751.0" layoutY="306.0" startX="-186.361328125" startY="-3.0517578125E-5" stroke="#ffc900" strokeWidth="5.0" />
+                  <ImageView fitHeight="54.0" fitWidth="56.0" layoutX="557.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-mail-100 (1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="562.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="560.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/lock.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="44.0" fitWidth="43.0" layoutX="562.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-password-reset-64.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#ffc900" layoutX="680.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" wrappingWidth="138.0">
+                     <font>
+                        <Font name="Gabriola" size="50.0" />
+                     </font>
+                  </Text>
+                  <JFXButton id="line" layoutX="470.0" layoutY="517.0" onAction="#btnBackOnAction" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #ffc900;" stylesheets="@../style/editSheet.css" text="Back">
+                     <graphic>
+                        <ImageView fitHeight="23.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

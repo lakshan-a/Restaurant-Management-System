@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="1087.0" style="-fx-background-color: #3A3A3AFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.HomepageController">
+   <children>
+      <AnchorPane layoutX="47.0" layoutY="47.0" prefHeight="678.0" prefWidth="1078.0" style="-fx-background-color: #ffc900;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <AnchorPane prefHeight="670.0" prefWidth="1070.0" style="-fx-background-color: #3A3A3AFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+               <children>
+                  <ImageView fitHeight="671.0" fitWidth="417.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/7 1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="671.0" fitWidth="446.0" layoutX="624.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/6 1.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#ffc900" layoutX="78.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Low Stock Items" wrappingWidth="202.4853780269624">
+                     <font>
+                        <Font name="Gabriola" size="37.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="204.0" fitWidth="312.0" layoutX="24.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Featured Card 4.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="109.0" layoutY="540.0" prefHeight="27.0" prefWidth="147.0" text="No of Employees" textFill="#fffdfd">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblcustcount" alignment="TOP_CENTER" layoutX="98.0" layoutY="573.0" prefHeight="35.0" prefWidth="169.0" text="0" textFill="#fffdfd">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="204.0" fitWidth="312.0" layoutX="713.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Featured Card 5.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="780.0" layoutY="537.0" prefHeight="27.0" prefWidth="180.0" text="This Month's Income" textFill="#fffdfd">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblmonthlyincome" alignment="TOP_CENTER" layoutX="797.0" layoutY="568.0" prefHeight="35.0" prefWidth="147.0" text="0" textFill="#fffdfd">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="204.0" fitWidth="312.0" layoutX="355.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/Featured Card 6.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="441.0" layoutY="539.0" prefHeight="27.0" prefWidth="147.0" text="Today's Income" textFill="#fffdfd">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbltodayincome" alignment="TOP_CENTER" layoutX="437.0" layoutY="571.0" prefHeight="35.0" prefWidth="147.0" text="0" textFill="#fffdfd">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="279.0" fitWidth="283.0" layoutX="723.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/LooperGroup.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="793.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/User profil.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="lblAdminName" layoutX="733.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" textAlignment="CENTER" wrappingWidth="253.98044300079346">
+                     <font>
+                        <Font name="Times New Roman Bold Italic" size="40.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <BarChart fx:id="lowstockitemsBarChart" layoutX="43.0" layoutY="70.0" legendVisible="false" prefHeight="323.0" prefWidth="544.0" style="-fx-background-color: transparent;" styleClass="chart-bar" stylesheets="@../style/DashBord.css">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

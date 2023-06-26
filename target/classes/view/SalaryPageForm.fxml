@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="1087.0" style="-fx-background-color: #3A3A3AFF;" stylesheets="@../style/CustomerBoard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.SalaryPageFormController">
+   <children>
+      <AnchorPane layoutX="55.0" layoutY="48.0" prefHeight="678.0" prefWidth="1078.0" style="-fx-background-color: #ffc900;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <AnchorPane prefHeight="670.0" prefWidth="1070.0" style="-fx-background-color: #3A3A3AFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+               <children>
+                  <ImageView fitHeight="671.0" fitWidth="442.0" layoutX="627.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/6 1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="670.0" fitWidth="408.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/7 1.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#ffc900" layoutX="433.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Salary Information" wrappingWidth="238.6667284965515">
+                     <font>
+                        <Font name="Gabriola" size="37.0" />
+                     </font>
+                  </Text>
+                  <JFXButton id="line" fx:id="addBtn" layoutX="793.0" layoutY="288.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="loginBtn" stylesheets="@../style/editSheet.css" text="ADD" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="line" fx:id="updateBtn" layoutX="873.0" layoutY="288.0" onAction="#updateBtnOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="loginBtn" stylesheets="@../style/editSheet.css" text="Update" textFill="#fffdfd">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="line" fx:id="deleteBtn" layoutX="952.0" layoutY="288.0" onAction="#deleteBtnOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="loginBtn" stylesheets="@../style/editSheet.css" text="Delete" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tblSalary" layoutX="68.0" layoutY="334.0" onMouseClicked="#tblSalaryOnClick" prefHeight="266.0" prefWidth="957.0">
+         <columns>
+            <TableColumn fx:id="colSID" prefWidth="199.0" text="Salary ID" />
+            <TableColumn fx:id="colEID" prefWidth="204.0" text="Employee ID" />
+            <TableColumn fx:id="colMethod" prefWidth="202.0" text="Payment Method" />
+            <TableColumn fx:id="colOt" prefWidth="185.0" text="Over Time" />
+            <TableColumn fx:id="colPayment" prefWidth="185.0" text="Payment" />
+         </columns>
+      </TableView>
+      <ComboBox fx:id="empIdTxt" layoutX="82.0" layoutY="151.0" prefHeight="28.0" prefWidth="204.0" />
+      <TextField fx:id="salaryIdTxt" layoutX="438.0" layoutY="150.0" onAction="#empIdSearchOnAction" onKeyTyped="#idKeyTyped" prefHeight="28.0" prefWidth="204.0" />
+      <TextField fx:id="paymentTxt" layoutX="82.0" layoutY="246.0" onKeyTyped="#paymentKeyTyped" onMouseClicked="#txtContactNoOnMouseClickedAction" prefHeight="28.0" prefWidth="204.0" />
+      <TextField fx:id="otTxt" layoutX="438.0" layoutY="246.0" onKeyTyped="#otKeyTyped" prefHeight="28.0" prefWidth="204.0" />
+      <Label layoutX="438.0" layoutY="128.0" prefHeight="10.0" prefWidth="150.0" text="Salary Id" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="224.0" prefHeight="10.0" prefWidth="150.0" text="Over Time" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="224.0" prefHeight="10.0" prefWidth="150.0" text="Payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="129.0" prefHeight="10.0" prefWidth="150.0" text="Employee Id" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="MethodTxt" layoutX="792.0" layoutY="148.0" prefHeight="28.0" prefWidth="204.0" />
+      <Label layoutX="792.0" layoutY="128.0" prefHeight="10.0" prefWidth="150.0" text="Payment Method" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="772.0" layoutY="23.0" onAction="#empIdSearchBarOnAction" onKeyTyped="#txtSearchOnKeyTypedAction" prefHeight="28.0" prefWidth="204.0" promptText="Search by ID" />
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="950.0" layoutY="24.0" onMouseClicked="#searchIconOnMouseClickedAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/searchIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

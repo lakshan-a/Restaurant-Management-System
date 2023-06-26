@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="drinks" prefHeight="692.0" prefWidth="1093.0" style="-fx-background-color: #3A3A3AFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.FoodMenuDrinks">
+    <children>
+        <AnchorPane layoutX="12.0" layoutY="11.0" prefHeight="683.0" prefWidth="1084.0" style="-fx-background-color: #ffc900;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+            <children>
+                <AnchorPane layoutX="8.0" layoutY="8.0" prefHeight="675.0" prefWidth="1076.0" style="-fx-background-color: #3A3A3AFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+                    <children>
+                        <ImageView fitHeight="676.0" fitWidth="366.0">
+                            <image>
+                                <Image url="@../../image/7 1.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="676.0" fitWidth="458.0" layoutX="630.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/612.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="507.0" layoutY="21.0" prefHeight="46.0" prefWidth="112.0" text="Drinks" textFill="#ffc900">
+                            <font>
+                                <Font name="Comic Sans MS" size="23.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="132.0" layoutY="145.0" text="Kiwi Coctail . . . . . . . . . . . . . . . . . . . . . . . . . ." textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="132.0" layoutY="166.0" text="Granny help you treat yourself with a different meal" textFill="WHITE">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="132.0" layoutY="185.0" text="everyday" textFill="WHITE">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="440.0" layoutY="147.0" text="Rs. 150.00" textFill="#ffc900" />
+                        <Label layoutX="672.0" layoutY="137.0" text="Summer Beer . . . . . . . . . . . . . . . . . . . . . . . . " textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="672.0" layoutY="158.0" text="Etiam tempus felis eros, id lobortis turpis" textFill="WHITE">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="980.0" layoutY="139.0" text="Rs. 400.00" textFill="#ffc900" />
+                        <Label layoutX="132.0" layoutY="263.0" text="Red Mojitos . . . . . . . . . . . . . . . . . . . . . . . . . . " textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="132.0" layoutY="284.0" text="usce tempus tempus maximus volutpat" textFill="WHITE">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="440.0" layoutY="265.0" text="Rs. 200.00" textFill="#ffc900" />
+                        <Label layoutX="133.0" layoutY="382.0" text="Chapel Down . . . . . . . . . . . . . . . . . . . . . . . ." textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="440.0" layoutY="384.0" text="Rs. 500.00" textFill="#ffc900" />
+                        <Label layoutX="672.0" layoutY="253.0" text="Cabernet Sauvignon . . . . . . . . . . . . . . . . . . . " textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="980.0" layoutY="255.0" text="Rs. 300.00" textFill="#ffc900" />
+                        <Label layoutX="672.0" layoutY="377.0" text="Tea . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . " textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="672.0" layoutY="398.0" text="Granny help you treat yourself with a different meal" textFill="WHITE">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="672.0" layoutY="417.0" text="everyday" textFill="WHITE">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="980.0" layoutY="379.0" text="Rs. 100.00" textFill="#ffc900" />
+                        <Line endX="100.0" layoutX="544.0" layoutY="66.0" startX="-100.0" stroke="#ffc900" />
+                        <Label layoutX="521.0" layoutY="621.0" text="1  2  3  4  " textFill="WHITE" />
+                        <Button id="line" fx:id="btnBack" layoutX="437.0" layoutY="617.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #ffc900; -fx-background-radius: 35 35 35 35;" stylesheets="@../../style/editSheet.css" text="Back" />
+                        <ImageView fitHeight="25.0" fitWidth="21.0" layoutX="435.0" layoutY="618.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../image/Typicons_e044(0)_48.png" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="571.0" layoutY="621.0" text="5" textFill="#ffc900" />
+                        <Label layoutX="133.0" layoutY="403.0" text="Etiam tempus felis eros, id lobortis turpis" textFill="WHITE">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Label>
+                  <Label layoutX="672.0" layoutY="275.0" text="usce tempus tempus maximus volutpat" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="133.0" layoutY="482.0" text="Coffee . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="133.0" layoutY="503.0" text="Granny help you treat yourself with a different meal" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="133.0" layoutY="522.0" text="everyday" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="441.0" layoutY="484.0" text="Rs. 150.00" textFill="#ffc900" />
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="43.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/download (1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="43.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/ZjyLivPr_400x400.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="579.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/wheat_beer_in_glass.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="579.0" layoutY="368.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/GREENTEA5-500x500.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="579.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/1664213330931_dsc_8205_m.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="43.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/Chapel_Down_Coronation_Edition_-_bottle_and_glasses-min_1728x.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="43.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../image/pomegranate-mojito-1.png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

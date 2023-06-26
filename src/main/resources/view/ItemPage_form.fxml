@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="1087.0" style="-fx-background-color: #3A3A3AFF;" stylesheets="@../style/CustomerBoard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.ItemFormController">
+   <children>
+      <AnchorPane layoutX="66.0" layoutY="51.0" prefHeight="678.0" prefWidth="1078.0" style="-fx-background-color: #ffc900;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <AnchorPane prefHeight="670.0" prefWidth="1070.0" style="-fx-background-color: #3A3A3AFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+               <children>
+                  <ImageView fitHeight="671.0" fitWidth="409.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/7 1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="831.0" fitWidth="443.0" layoutX="626.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/6 1.png" />
+                     </image>
+                  </ImageView>
+                  <TableView fx:id="tblItem" layoutX="117.0" layoutY="366.0" onMouseClicked="#itemTblClick" prefHeight="254.0" prefWidth="809.0">
+                     <columns>
+                        <TableColumn fx:id="colItemId" prefWidth="123.0" text="Item ID" />
+                        <TableColumn fx:id="colItemName" prefWidth="215.66665649414062" text="Item Name" />
+                        <TableColumn fx:id="colUnitPrize" prefWidth="203.33331298828125" text="Unit Price" />
+                        <TableColumn fx:id="colQTY" prefWidth="265.0" text="QtyOnHand" />
+                     </columns>
+                  </TableView>
+                  <JFXButton id="line" fx:id="deleteBtn" layoutX="862.0" layoutY="320.0" onAction="#deleteBtnOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="loginBtn" stylesheets="@../style/editSheet.css" text="Delete" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="line" fx:id="updateBtn" layoutX="783.0" layoutY="320.0" onAction="#updateBtnOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="loginBtn" stylesheets="@../style/editSheet.css" text="Update" textFill="#fffdfd">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="line" fx:id="addBtn" layoutX="704.0" layoutY="319.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="loginBtn" stylesheets="@../style/editSheet.css" text="ADD" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <Text fill="#ffc900" layoutX="435.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Information" wrappingWidth="225.33341550827026">
+                     <font>
+                        <Font name="Gabriola" size="37.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="txtQuntity" layoutX="197.0" layoutY="260.0" onKeyTyped="#quantityKeyTyped" prefHeight="28.0" prefWidth="204.0" />
+                  <Label layoutX="197.0" layoutY="238.0" prefHeight="10.0" prefWidth="150.0" text="Quantity" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUnitPrice" layoutX="610.0" layoutY="258.0" onKeyTyped="#unitPriceKeyTyped" prefHeight="28.0" prefWidth="204.0" />
+                  <Label layoutX="610.0" layoutY="236.0" prefHeight="10.0" prefWidth="150.0" text="Unti Price" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="txtId" layoutX="204.0" layoutY="149.0" onKeyTyped="#idKeyTyped" prefHeight="28.0" prefWidth="204.0" />
+      <TextField fx:id="txtName" layoutX="614.0" layoutY="150.0" onKeyTyped="#nameKeyTyped" prefHeight="28.0" prefWidth="204.0" />
+      <Label layoutX="204.0" layoutY="127.0" prefHeight="10.0" prefWidth="150.0" text="Item Id" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearch" layoutX="780.0" layoutY="24.0" onAction="#empIdSearchBarOnAction" onKeyTyped="#txtSearchOnKeyTypedAction" prefHeight="28.0" prefWidth="204.0" promptText="Search by ID" />
+      <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="957.0" layoutY="25.0" onMouseClicked="#searchIconOnMouseClickedAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/searchIcon.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="615.0" layoutY="129.0" prefHeight="10.0" prefWidth="150.0" text="Item Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

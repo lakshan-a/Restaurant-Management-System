@@ -1,0 +1,14 @@
+.btnMenu{
+    -fx-background-color: #b7cfee;
+    -fx-background-radius: 20px;
+}
+
+.btnExit{
+    -fx-background-color: #e01313;
+    -fx-background-radius: 10px;
+}
+
+.btnBack{
+    -fx-background-color: #282727;
+    -fx-background-radius: 10px;
+}

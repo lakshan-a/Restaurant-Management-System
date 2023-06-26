@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="FurnitureShop">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/main/resources/image/FurnitureShop.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="1020.0" style="-fx-background-color: #3A3A3AFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.EmployeeAttendanceFormController">
+    <children>
+      <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="552.0" prefWidth="1013.0" style="-fx-background-color: #ffc900;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="544.0" prefWidth="1004.0" style="-fx-background-color: #3A3A3AFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+               <children>
+                  <ImageView fitHeight="544.0" fitWidth="371.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/7 1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="632.0" fitWidth="360.0" layoutX="644.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/6 1.png" />
+                     </image>
+                  </ImageView>
+                    <TableView fx:id="tblEmpAttend" layoutX="163.0" layoutY="285.0" onMouseClicked="#tblAttendOnMouseClicked" prefHeight="229.0" prefWidth="678.0">
+                        <columns>
+                            <TableColumn fx:id="colAttendId" prefWidth="87.0" text="Attend ID" />
+                            <TableColumn fx:id="colEmployeeId" prefWidth="108.0" text="EmployeeID" />
+                            <TableColumn fx:id="colWorkingHourese" prefWidth="167.0" text="Working Hourse" />
+                            <TableColumn fx:id="colAttend" prefWidth="143.0" text="Attendance" />
+                            <TableColumn fx:id="colDate" prefWidth="172.0" text="Date" />
+                        </columns>
+                    </TableView>
+                    <JFXButton id="line" fx:id="btnDelete" layoutX="776.0" layoutY="241.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="loginBtn" stylesheets="@../style/editSheet.css" text="Delete" textFill="#fff8f8">
+                        <font>
+                            <Font name="System Bold Italic" size="12.0" />
+                        </font>
+                    </JFXButton>
+                    <JFXButton id="line" fx:id="btnUpdate" layoutX="702.0" layoutY="241.0" onAction="#btnUpdatOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="loginBtn" stylesheets="@../style/editSheet.css" text="Update" textFill="#fff8f8">
+                        <font>
+                            <Font name="System Bold Italic" size="12.0" />
+                        </font>
+                    </JFXButton>
+                  <JFXButton id="line" fx:id="btnAdd" layoutX="627.0" layoutY="242.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="loginBtn" stylesheets="@../style/editSheet.css" text="Add" textFill="#fff8f8">
+                     <font>
+                        <Font name="System Bold Italic" size="12.0" />
+                     </font>
+                  </JFXButton>
+                    <DatePicker fx:id="txtDate" layoutX="402.0" layoutY="192.0" prefHeight="28.0" prefWidth="204.0" />
+                  <TextField fx:id="txtAttendId" layoutX="164.0" layoutY="119.0" onKeyTyped="#txtAttendIdOnKeytypedAction" prefHeight="28.0" prefWidth="204.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtWorkingHourse" layoutX="631.0" layoutY="116.0" onKeyTyped="#txtWorkinghoursOnKeyTypedAction" prefHeight="28.0" prefWidth="204.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtAttend" layoutX="164.0" layoutY="192.0" onKeyTyped="#txtAttendanceOnKeyTypedAction" prefHeight="28.0" prefWidth="204.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="cmbEmpId" layoutX="402.0" layoutY="118.0" prefHeight="28.0" prefWidth="204.0" />
+                  <Label layoutX="163.0" layoutY="99.0" prefHeight="17.0" prefWidth="105.0" text="Attend ID" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="402.0" layoutY="96.0" prefHeight="17.0" prefWidth="105.0" text="Employee Id" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="630.0" layoutY="96.0" prefHeight="21.0" prefWidth="131.0" text="Working Hours" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="163.0" layoutY="172.0" prefHeight="17.0" prefWidth="105.0" text="Attendance" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="402.0" layoutY="172.0" prefHeight="17.0" prefWidth="105.0" text="Date" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#ffc900" layoutX="374.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee Attendance" wrappingWidth="255.6667284965515">
+                     <font>
+                        <Font name="Gabriola" size="37.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

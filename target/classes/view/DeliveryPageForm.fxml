@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="1087.0" style="-fx-background-color: #3A3A3AFF;" stylesheets="@../style/CustomerBoard.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.DelivaryPageFormController">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="74.0" prefHeight="678.0" prefWidth="1078.0" style="-fx-background-color: #ffc900;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+         <children>
+            <AnchorPane layoutX="48.0" layoutY="23.0" prefHeight="28.0" prefWidth="204.0" style="-fx-background-color: #3A3A3AFF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="4.0">
+               <children>
+                  <ImageView fitHeight="670.0" fitWidth="476.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/7 1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="739.0" fitWidth="443.0" layoutX="627.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/6 1.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="txtSearch" layoutX="808.0" layoutY="33.0" onAction="#searchBarOnAction" onKeyTyped="#txtSearchOnKeyTypedAction" prefHeight="28.0" prefWidth="204.0" promptText="Search by ID" />
+                  <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="986.0" layoutY="35.0" onMouseClicked="#searchIconOnMouseClickedAction" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/searchIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#ffc900" layoutX="395.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delivery Information" wrappingWidth="306.6667284965515">
+                     <font>
+                        <Font name="Gabriola" size="37.0" />
+                     </font>
+                  </Text>
+                  <JFXButton id="line" fx:id="btnDelete" buttonType="RAISED" layoutX="976.0" layoutY="262.0" onAction="#deleteOnAction" prefHeight="28.0" prefWidth="63.0" ripplerFill="BLACK" style="-fx-background-color: #ffc900;" styleClass="btnDelete" stylesheets="@../style/editSheet.css" text="Delete" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="line" fx:id="btnUpdate" buttonType="RAISED" layoutX="897.0" layoutY="262.0" onAction="#updateOnAction" prefHeight="28.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="btnDelete" stylesheets="@../style/editSheet.css" text="Update" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton id="line" fx:id="btnUpdate1" buttonType="RAISED" layoutX="818.0" layoutY="262.0" onAction="#updateOnAction" prefHeight="28.0" prefWidth="63.0" style="-fx-background-color: #ffc900;" styleClass="btnDelete" stylesheets="@../style/editSheet.css" text="Add" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </JFXButton>
+                  <RadioButton fx:id="radioBtnYes" layoutX="801.0" layoutY="121.0" mnemonicParsing="false" onAction="#radioBtnYesOnAction" prefHeight="17.0" prefWidth="57.0" text="YES" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </RadioButton>
+                  <Label layoutX="675.0" layoutY="117.0" prefHeight="25.0" prefWidth="126.0" text="Delivery Status :" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="radioBtnNo" layoutX="801.0" layoutY="153.0" mnemonicParsing="false" onAction="#radioBtnNoOnAction" prefHeight="17.0" prefWidth="57.0" text="NO" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="10.0" />
+                     </font>
+                  </RadioButton>
+                  <TextField fx:id="txtLocation" layoutX="680.0" layoutY="213.0" prefHeight="28.0" prefWidth="204.0" />
+                  <Label layoutX="680.0" layoutY="191.0" prefHeight="17.0" prefWidth="190.0" text="Location" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="empIdTxt" layoutX="189.0" layoutY="151.0" prefHeight="28.0" prefWidth="204.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="198.0" layoutY="137.0" prefHeight="17.0" prefWidth="190.0" text="Employee Id" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="198.0" layoutY="204.0" prefHeight="17.0" prefWidth="190.0" text="Delivery Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="txtDeliveryDate" layoutX="198.0" layoutY="225.0" prefHeight="28.0" prefWidth="204.0" />
+      <Label layoutX="198.0" layoutY="90.0" prefHeight="25.0" prefWidth="100.0" text="Delivery Id :" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDeliveryId" layoutX="294.0" layoutY="85.0" prefHeight="35.0" prefWidth="174.0" style="-fx-background-color: #3A3A3AFF;" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblDelivery" layoutX="35.0" layoutY="310.0" onMouseClicked="#tableOnMouseClicked" prefHeight="309.0" prefWidth="1023.0">
+         <columns>
+            <TableColumn fx:id="colDeliveryId" prefWidth="111.0" text="Delivery Id" />
+            <TableColumn fx:id="colEmployeeId" prefWidth="124.0" text="Employee Id" />
+            <TableColumn fx:id="colOrderId" prefWidth="115.0" text="order Id" />
+            <TableColumn fx:id="colLocation" minWidth="0.0" prefWidth="207.0" text="Location" />
+            <TableColumn fx:id="colDeliveryDate" prefWidth="161.0" text="Delivery date" />
+            <TableColumn fx:id="colDueDate" prefWidth="153.0" text="Due date" />
+            <TableColumn fx:id="colDeliveryStatus" prefWidth="153.0" text="Delivery Status" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

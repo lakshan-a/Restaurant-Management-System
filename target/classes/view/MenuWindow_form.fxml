@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="690.0" prefWidth="1348.0" style="-fx-background-color: #3A3A3AFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.restaurant.controller.MenuWindowFormController">
+    <children>
+        <AnchorPane layoutX="21.0" layoutY="7.0" prefHeight="679.0" prefWidth="249.0" style="-fx-background-color: #FFC900FF;">
+            <children>
+                <AnchorPane layoutX="-20.0" layoutY="-83.0" prefHeight="756.0" prefWidth="264.0" style="-fx-background-color: #3A3A3AFF;">
+                    <children>
+                        <Button id="blue" fx:id="btnHome" layoutX="17.0" layoutY="172.0" mnemonicParsing="false" onAction="#btnHomeOnAction" prefHeight="45.0" prefWidth="230.0" style="-fx-background-radius: 35 35 35; -fx-background-color: #FFC900FF;" stylesheets="@../style/new.css" text="Home">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button id="blue" fx:id="btnSalary" layoutX="17.0" layoutY="649.0" mnemonicParsing="false" onAction="#btnSalaryOnAction" prefHeight="45.0" prefWidth="230.0" style="-fx-background-radius: 35 35 35; -fx-background-color: #FFC900FF;" stylesheets="@../style/new.css" text="Salary">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button id="blue" fx:id="btnCustomer" layoutX="18.0" layoutY="278.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="45.0" prefWidth="230.0" style="-fx-background-radius: 35 35 35; -fx-background-color: #FFC900FF;" stylesheets="@../style/new.css" text="Customer">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button id="blue" fx:id="btnFood" layoutX="17.0" layoutY="384.0" mnemonicParsing="false" onAction="#btnFoodOnAction" prefHeight="45.0" prefWidth="230.0" style="-fx-background-radius: 35 35 35; -fx-background-color: #FFC900FF;" stylesheets="@../style/new.css" text="Food">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button id="blue" fx:id="btnItem" layoutX="18.0" layoutY="331.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="45.0" prefWidth="230.0" style="-fx-background-radius: 35 35 35; -fx-background-color: #FFC900FF;" stylesheets="@../style/new.css" text="Item">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="22.0" layoutY="80.0" prefHeight="42.0" prefWidth="147.0" text="The Good" textFill="WHITE">
+                            <font>
+                                <Font name="Comic Sans MS Bold Italic" size="30.0" />
+                            </font>
+                            <effect>
+                                <Reflection topOpacity="0.09" />
+                            </effect>
+                        </Label>
+                        <Label layoutX="78.0" layoutY="116.0" prefHeight="41.0" prefWidth="161.0" text="Restaurant" textFill="WHITE">
+                            <font>
+                                <Font name="Comic Sans MS Bold Italic" size="30.0" />
+                            </font>
+                            <effect>
+                                <Reflection fraction="0.67" topOpacity="0.09" />
+                            </effect>
+                        </Label>
+                        <ImageView fitHeight="58.0" fitWidth="63.0" layoutX="176.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/6 4.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="58.0" fitWidth="63.0" layoutX="14.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/6 6.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="34.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/FontAwesome_f015_48.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="55.0" fitWidth="53.0" layoutX="34.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/Entypo_d83d(1)_48.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="37.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/FontAwesome_f0f5(2)_48.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="58.0" fitWidth="53.0" layoutX="38.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/Entypo_e738(0)_48.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="36.0" layoutY="646.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/FontAwesome_f155(3)_48.png" />
+                            </image>
+                        </ImageView>
+                        <Button id="blue" fx:id="btnEmployee" layoutX="17.0" layoutY="596.0" mnemonicParsing="false" onAction="#btnEmployeeOnAction" prefHeight="45.0" prefWidth="230.0" style="-fx-background-radius: 35 35 35; -fx-background-color: #FFC900FF;" stylesheets="@../style/new.css" text="Employee">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="36.0" layoutY="591.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/Entypo_d83d(0)_48.png" />
+                            </image>
+                        </ImageView>
+                        <Button id="blue" fx:id="btnLogout" layoutX="16.0" layoutY="702.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="45.0" prefWidth="230.0" style="-fx-background-radius: 35 35 35; -fx-background-color: #FFC900FF;" stylesheets="@../style/new.css" text="Log Out" textFill="#434141">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="50.0" fitWidth="39.0" layoutX="43.0" layoutY="707.0" opacity="0.81" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/octicons_f036(0)_48.png" />
+                            </image>
+                        </ImageView>
+                        <Button id="blue" fx:id="btnOrder" layoutX="17.0" layoutY="437.0" mnemonicParsing="false" onAction="#btnOrderOnAction" prefHeight="45.0" prefWidth="230.0" style="-fx-background-radius: 35 35 35; -fx-background-color: #FFC900FF;" stylesheets="@../style/new.css" text="Order">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="55.0" fitWidth="53.0" layoutX="36.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/FontAwesome_f07a(0)_48.png" />
+                            </image>
+                        </ImageView>
+                  <Button id="blue" fx:id="btnDashbpoard" layoutX="15.0" layoutY="225.0" mnemonicParsing="false" onAction="#btnDashbpoardOnAction" prefHeight="45.0" prefWidth="230.0" style="-fx-background-radius: 35 35 35; -fx-background-color: #FFC900FF;" stylesheets="@../style/new.css" text="Dashboard">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="32.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/octicons_f07d(0)_48.png" />
+                     </image>
+                  </ImageView>
+                        <Button id="blue" layoutX="16.0" layoutY="543.0" mnemonicParsing="false" onAction="#btnPaymentOnAction" prefHeight="45.0" prefWidth="230.0" style="-fx-background-radius: 35 35 35; -fx-background-color: #FFC900FF;" stylesheets="@../style/new.css" text="Payment">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="53.0" fitWidth="53.0" layoutX="34.0" layoutY="539.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/Material Icons_e53e(1)_48.png" />
+                            </image>
+                        </ImageView>
+                  <Button id="blue" fx:id="btnDelivery" layoutX="18.0" layoutY="490.0" mnemonicParsing="false" onAction="#btnDeliveryOnAction" prefHeight="45.0" prefWidth="230.0" style="-fx-background-radius: 35 35 35; -fx-background-color: #FFC900FF;" stylesheets="@../style/new.css" text="Delivery">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="46.0" layoutY="494.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/icons8-delivery-100 (1).png" />
+                     </image>
+                  </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="ancoRoot" layoutX="272.0" layoutY="1.0" prefHeight="690.0" prefWidth="1092.0" style="-fx-background-color: #3A3A3AFF;">
+            <children>
+                <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="678.0" prefWidth="1078.0" style="-fx-background-color: #FFC900FF;">
+                    <children>
+                        <AnchorPane layoutX="4.0" layoutY="3.0" prefHeight="671.0" prefWidth="1070.0" style="-fx-background-color: #3A3A3AFF;" />
+                        <ImageView fx:id="welcome" fitHeight="671.0" fitWidth="1069.0" layoutX="5.0" layoutY="4.0" opacity="0.5">
+                            <image>
+                                <Image url="@../image/2 (2).jpg" />
+                            </image>
+                        </ImageView>
+                        <Label layoutX="52.0" layoutY="68.0" prefHeight="61.0" prefWidth="95.0" text=". . . . " textFill="WHITE">
+                            <font>
+                                <Font size="48.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="140.0" prefHeight="20.0" prefWidth="274.0" text="Top Services and Premium Cuisine" textFill="WHITE">
+                            <font>
+                                <Font name="Times New Roman" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="59.0" layoutY="177.0" prefHeight="71.0" prefWidth="624.0" text="Welcome to The Good" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Black" size="48.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="66.0" layoutY="240.0" prefHeight="71.0" prefWidth="624.0" text="Restaurant" textFill="WHITE">
+                            <font>
+                                <Font name="Arial Black" size="48.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="btnhome2" layoutX="527.0" layoutY="614.0" mnemonicParsing="false" onAction="#btnhome2OnAction" prefHeight="17.0" prefWidth="25.0" style="-fx-background-radius: 50 50 50 50; -fx-background-color: #FFC900FF;" />
+                        <Button fx:id="btnhome3" layoutX="563.0" layoutY="614.0" mnemonicParsing="false" onAction="#btnhome3OnAction" prefHeight="17.0" prefWidth="25.0" style="-fx-background-radius: 50 50 50 50; -fx-background-color: #FFC900FF;" />
+                        <Button fx:id="btnhome1" layoutX="491.0" layoutY="614.0" mnemonicParsing="false" onAction="#btnhome1OnAction" prefHeight="17.0" prefWidth="25.0" style="-fx-background-radius: 50 50 50 50; -fx-background-color: #ffffff;" textFill="WHITE" />
+                        <Button id="windows8" fx:id="btnCheckMenu" layoutX="87.0" layoutY="380.0" mnemonicParsing="false" onAction="#btnCheckMenuOnAction" opacity="0.66" prefHeight="50.0" prefWidth="191.0" style="-fx-background-color: #FFC900FF; -fx-background-radius: 25 25 25 25;" stylesheets="@../style/new.css" text="Check out our Manu ">
+                            <font>
+                                <Font name="System Bold Italic" size="12.0" />
+                            </font>
+                        </Button>
+                        <ImageView fitHeight="50.0" fitWidth="54.0" layoutX="228.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/Typicons_e01b(0)_48.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="281.0" fitWidth="468.0" layoutX="604.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/logo-no-background.png" />
+                            </image>
+                            <effect>
+                                <Reflection fraction="0.0" topOpacity="0.0" />
+                            </effect>
+                        </ImageView>
+                        <Label fx:id="lblTime" layoutX="962.0" layoutY="18.0" prefHeight="30.0" prefWidth="102.0" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold Italic" size="20.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="59.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../image/coffee-lover-hot-coffee.gif" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
